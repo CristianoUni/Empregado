@@ -1,0 +1,22 @@
+import org.hamcrest.StringDescription;
+public class Empregado {
+    private String nome, sobrenome;
+    private double salario;
+    private double salarioAnual;
+
+    public void inicializarEmpregado(String n, String sn, double salario) {
+        nome = n;
+        sobrenome = sn;
+        this.salario = salario;
+        this.salarioAnual = salario * 12;
+    }
+
+     public double getSalarioAnual() {
+        return salarioAnual;
+    }
+
+    public void aumentarSalario(double percentual) {
+        salario += salario * percentual / 100;
+        salarioAnual = salario * 12;
+    }
+}

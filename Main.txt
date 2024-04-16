@@ -1,0 +1,22 @@
+public class Main {
+  public static void main(String[] args) {
+      Empregado empregado = new Empregado();
+
+    public void inicializarEmpregado(String n, String sn, double salario) {
+        nome = n;
+        sobrenome = sn;
+        this.salario = salario;
+        this.salarioAnual = salario * 12;
+    }
+
+    // Getter and setter methods for nome, sobrenome, salario
+
+    public double getSalarioAnual() {
+        return salarioAnual;
+    }
+
+    public void aumentarSalario(double percentual) {
+        salario += salario * percentual / 100;
+        salarioAnual = salario * 12;
+    }
+}
